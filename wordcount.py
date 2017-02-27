@@ -9,8 +9,8 @@ def remove_punctuation(phrase):
 
 # remove_punctuation("Hello?,.")
 
-def word_count(argv):
-    text_file = open(file_name)
+def word_count():
+    text_file = open(sys.argv[1])
     word_counts = {}
 
     for line in text_file:
@@ -29,5 +29,5 @@ def word_count(argv):
 
     text_file.close()
 
-word_count("test.txt")
+word_count()
 
